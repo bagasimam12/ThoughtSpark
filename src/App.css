@@ -1,0 +1,89 @@
+/* Layout structure and container style for ThoughtSpark */
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 6rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Page titles and text styles */
+h1, h2, h3, .brand-font {
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
+
+/* Standard Button */
+.btn {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition-fast);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--text-muted);
+}
+
+.btn-danger {
+  background-color: var(--danger-light);
+  color: var(--danger);
+}
+
+.btn-danger:hover {
+  background-color: var(--danger);
+  color: white;
+}
+
+/* Card basic structure */
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  border: 1px solid var(--bg-secondary);
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1rem 1rem 5rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}

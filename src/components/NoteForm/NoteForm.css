@@ -1,0 +1,69 @@
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: fadeIn 0.8s ease-out;
+  border-left: 4px solid var(--accent);
+}
+
+.note-textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+  min-height: 80px;
+}
+
+.note-textarea::placeholder {
+  color: var(--text-muted);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.form-divider {
+  height: 1px;
+  background-color: var(--bg-secondary);
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.25rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.char-indicator {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.draft-badge {
+  color: var(--accent);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.btn-submit {
+  padding: 0.6rem 1.25rem;
+}
+
+@media (max-width: 480px) {
+  .form-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .char-indicator {
+    text-align: left;
+  }
+  .btn-submit {
+    width: 100%;
+  }
+}

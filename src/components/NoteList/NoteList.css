@@ -1,0 +1,59 @@
+.note-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.date-group-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.date-group-title {
+  font-size: 1.1rem;
+  color: var(--accent-dark);
+  border-bottom: 1px solid var(--bg-secondary);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+[data-theme="dark"] .date-group-title {
+  color: var(--accent-light);
+}
+
+.date-group-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Empty State Styling */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--card-bg);
+  border: 1px dashed var(--text-muted);
+  gap: 0.75rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.empty-state-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.empty-state-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  max-width: 420px;
+}

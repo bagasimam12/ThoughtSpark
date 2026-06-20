@@ -1,0 +1,66 @@
+.export-modal-card {
+  max-width: 500px;
+}
+
+.export-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.export-stats {
+  background: var(--bg-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin: 0.5rem 0;
+}
+
+.export-options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.export-option-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--bg-secondary);
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  align-items: center;
+  transition: var(--transition-fast);
+}
+
+.export-option-card:hover {
+  border-color: var(--accent);
+  background-color: var(--bg-secondary);
+  transform: translateX(4px);
+}
+
+.export-option-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.export-option-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.export-option-info h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.export-option-info p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
